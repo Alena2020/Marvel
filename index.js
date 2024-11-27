@@ -93,8 +93,14 @@ function fetchCharacters() {
  * @returns {Array}
  */
 function getCharacterCards(characters) {
-    // TODO 2
+    let arr = [];
+    for (let i = 0; i < characters.length; i++) {
+        let character = characters[i];
+        let card = getCharacterCard(character);
+        arr.push(card);        
+    }
     // characters.length - длина массива characters
+    return arr;
 }
 
 /**
