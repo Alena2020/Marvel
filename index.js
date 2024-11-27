@@ -110,5 +110,11 @@ function getCharacterCards(characters) {
  * @returns {Array}
  */
 function getCharacterModals(characters) {
-    // TODO 3
+        let arr = [];
+    for (let i = 0; i < characters.length; i++) {
+        let character = characters[i];
+        let modal = getCharacterModal(character);
+        arr.push(modal);        
+    }
+    return arr;
 }
