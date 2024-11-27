@@ -82,7 +82,8 @@ function getCharacterModal(character) {
  * получим информацию о персонажах с API
  */
 function fetchCharacters() {
-    // TODO 1
+    let url = 'https://jsfree-les-3-api.onrender.com/characters';
+    return fetch(url).then(res => res.json());
 }
 
 /**
